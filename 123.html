@@ -4,7 +4,7 @@
 	<meta charset = "utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang web Tết</title>
-	<style>
+    <style>
 		body {font-family:Segoe UI, Roboto, Arial, sans-serif;}
 		header {background: #d32f2f; color: white; text-align: center;padding: 30px}
 		footer {background: #333; color: white; text-align: left; padding: 20px}
@@ -13,6 +13,12 @@
 		h1{font-family:"Brush Script MT", cursive;font-size:40px;}
 		.ảnh{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
     .ảnh img{width:100%;height:300px;object-fit:cover;border-radius:8px}
+		@media (max-width: 768px) {.ảnh {grid-template-columns: 1fr;}
+
+  iframe {
+    height: 250px;
+  }
+}
 	</style>
 </head>
 <body>
@@ -94,6 +100,7 @@ result.textContent = 'Cảm ơn bạn đã trả lời!';});
 </script>
 </body>
 </html>
+
 
 
 
