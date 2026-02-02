@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tết Nguyên Đán - Việt Nam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Thanh điều hướng -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">🧧 Tết Việt Nam</a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#articles">Bài viết</a></li>
+                <li><a href="#gallery">Hình ảnh</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#music">Âm nhạc</a></li>
+                <li><a href="#quiz">Trắc nghiệm</a></li>
+                <li><a href="#comments">Bình luận</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-decorations">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Chào mừng năm mới</p>
+            <h1 class="hero-title">Tết Nguyên Đán</h1>
+            <p class="hero-description">Khám phá vẻ đẹp văn hóa và truyền thống của Tết cổ truyền Việt Nam</p>
+            <div class="hero-buttons">
+                <a href="#articles" class="btn btn-primary">Khám phá ngay</a>
+                <a href="#quiz" class="btn btn-secondary">Chơi trắc nghiệm</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Bài viết -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tìm hiểu về Tết</h2>
+                <p>Khám phá những điều thú vị về Tết cổ truyền Việt Nam</p>
+            </div>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-icon">📅</div>
+                    <h3>Ý nghĩa của Tết Nguyên Đán</h3>
+                    <p>Tết Nguyên Đán là dịp lễ quan trọng nhất trong năm của người Việt Nam. Đây là thời điểm để sum họp gia đình, tưởng nhớ tổ tiên và cầu mong một năm mới an khang thịnh vượng. Từ "Nguyên" có nghĩa là khởi đầu, "Đán" nghĩa là buổi sáng sớm, thể hiện sự khởi đầu mới đầy hy vọng.</p>
+                </article>
+                <article class="article-card">
+                    <div class="article-icon">🍜</div>
+                    <h3>Ẩm thực ngày Tết</h3>
+                    <p>Mâm cỗ Tết truyền thống gồm bánh chưng, bánh tét, thịt kho tàu, dưa hành, củ kiệu, và nhiều món ngon khác. Mỗi món ăn đều mang ý nghĩa riêng, như bánh chưng tượng trưng cho đất, thể hiện lòng biết ơn với tổ tiên và thiên nhiên.</p>
+                </article>
+                <article class="article-card">
+                    <div class="article-icon">🧧</div>
+                    <h3>Phong tục lì xì</h3>
+                    <p>Lì xì là phong tục đẹp trong ngày Tết, người lớn tặng tiền mừng tuổi cho trẻ em trong bao đỏ tượng trưng cho may mắn. Số tiền không quan trọng bằng ý nghĩa chúc phúc, cầu mong trẻ em khỏe mạnh, học giỏi và gặp nhiều điều tốt đẹp.</p>
+                </article>
+                <article class="article-card">
+                    <div class="article-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Đoàn viên gia đình</h3>
+                    <p>Tết là dịp để mọi thành viên trong gia đình sum họp, cùng nhau dọn dẹp nhà cửa, trang trí cây mai, cây đào, và chuẩn bị mâm cỗ. Đêm giao thừa, cả gia đình quây quần bên nhau đón chào năm mới, chia sẻ những khoảnh khắc ấm áp.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Góc hình ảnh</h2>
+                <p>Những khoảnh khắc đẹp của mùa Tết</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://xenangtudong.com/upload/images/mai-vinh-hao.jpg" alt="Hoa mai vàng" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Hoa mai vàng rực rỡ</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://phunuvietnam.mediacdn.vn/thumb_w/1098/179072216278405120/2020/12/6/phao-hoa-2-16072484247221595306397-23-0-361-540-crop-1607248435008570176225.jpg" alt="Pháo hoa" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Pháo hoa đêm giao thừa</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/1/5/1134666/Li--Xi.jpeg" alt="Lì xì" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Lì xì may mắn</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoHafShoYdbJuvf07hWpyVDrTXMPAgqYKTw&s" alt="Đèn lồng" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Đèn lồng đỏ</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://images.hcmcpv.org.vn/res/news/2023/01/23-01-2023-video-mua-lan-net-van-hoa-nghe-thuat-truyen-thong-ron-rang-trong-nhung-ngay-dau-nam-moi-C48AEE47.jpg" alt="Múa lân" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Múa lân ngày Tết</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://cdn.tgdd.vn/Files/2016/12/30/932155/cach-lam-banh-chung-thom-ngon-xanh-deo-dam-da-huong-vi-tet-202209011455226787.jpg" alt="Bánh chưng" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Bánh chưng xanh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <!-- Video -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Video về Tết</h2>
+                <p>Cùng xem những video đặc sắc về Tết Việt Nam</p>
+            </div>
+            <div class="video-main">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1771836943509132%2F&show_text=false&width=560&t=0" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" title="Video về Tết" allowfullscreen></iframe>
+                <p class="video-caption">Nhìn lại 2025</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-item">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1915301796017008%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" title="Tết quê hương" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2111483082973211%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true "title="Phong tục ngày Tết" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Âm nhạc -->
+    <section id="music" class="music-section">
+        <div class="container">
+            <div class="section-header section-header-light">
+                <h2>Nhạc Xuân</h2>
+                <p>Thưởng thức những bài hát xuân hay nhất</p>
+            </div>
+            <div class="music-list">
+                <div class="music-item" id="song-0">
+                    <button class="play-btn" onclick="toggleSong(0)">▶</button>
+                    <div class="music-info">
+                        <h3>Một năm mới bình an</h3>
+                        <p>Sơn Tùng M-TP</p>
+                    </div>
+                    <div class="music-icons">🎵 🔊</div>
+                </div>
+                <div class="music-player" id="player-0" style="display: none;">
+                    <audio id="audio-0" src="Một Năm Mới Bình An.mp3"></audio>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trắc nghiệm -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trắc nghiệm về Tết</h2>
+                <p>Kiểm tra kiến thức của bạn về Tết cổ truyền Việt Nam</p>
+            </div>
+            <div class="quiz-container" id="quizContainer">
+                <!-- Quiz content will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- Bình luận -->
+    <section id="comments" class="comments-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bình luận</h2>
+                <p>Chia sẻ cảm nghĩ của bạn về Tết Nguyên Đán</p>
+            </div>
+            <div class="comments-container">
+                <!-- Comment Form -->
+                <div class="comment-form-card">
+                    <form id="commentForm">
+                        <div class="form-group">
+                            <input type="text" id="commentName" placeholder="Tên của bạn" maxlength="50" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="commentContent" placeholder="Viết bình luận của bạn..." maxlength="500" rows="4" required></textarea>
+                            <span class="char-count"><span id="charCount">0</span>/500</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            ✉️ Gửi bình luận
+                        </button>
+                    </form>
+                </div>
+                <!-- Comments List -->
+                <div class="comments-header">
+                    <span>💬 <span id="commentCount">2</span> bình luận</span>
+                </div>
+                <div class="comments-list" id="commentsList">
+                    <!-- Comments will be loaded by JavaScript -->
+    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <strong> Thông tin nhóm </strong>
+        <p> Trưởng nhóm: Lã Cường Thịnh </p>
+        <p> Thành viên: Khúc Dương Phương Linh, Nguyễn Thiên Dương, Nguyễn Đăng Dương, Nguyễn Tuấn Hùng, Nguyễn Thanh Đức, Nguyễn Trần Vy Linh, Nguyễn Thế Cương </p>
+    <p>Email: thinhvkhd4@gmail.com </p>
+    <p>Ngày cập nhật cuối: 7/12/2025</p>
+    <p> Nguồn tham khảo hình ảnh, video: Internet, Facebook </p>
+        </div>
+    </footer>
+    <script>
+        // ========== NAVIGATION ==========
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                }
+            });
+        });
+        // ========== LIGHTBOX ==========
+        const galleryImages = [
+            'https://xenangtudong.com/upload/images/mai-vinh-hao.jpg',
+            'https://phunuvietnam.mediacdn.vn/thumb_w/1098/179072216278405120/2020/12/6/phao-hoa-2-16072484247221595306397-23-0-361-540-crop-1607248435008570176225.jpg',
+            'https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/1/5/1134666/Li--Xi.jpeg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoHafShoYdbJuvf07hWpyVDrTXMPAgqYKTw&s',
+            'https://images.hcmcpv.org.vn/res/news/2023/01/23-01-2023-video-mua-lan-net-van-hoa-nghe-thuat-truyen-thong-ron-rang-trong-nhung-ngay-dau-nam-moi-C48AEE47.jpg',
+            'https://cdn.tgdd.vn/Files/2016/12/30/932155/cach-lam-banh-chung-thom-ngon-xanh-deo-dam-da-huong-vi-tet-202209011455226787.jpg'
+        ];
+        function openLightbox(index) {
+            document.getElementById('lightbox-img').src = galleryImages[index];
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        // ========== MUSIC PLAYER ==========
+        let currentAudio = null;
+
+function toggleSong(index) {
+    const audio = document.getElementById(`audio-${index}`);
+    const songItem = document.getElementById(`song-${index}`);
+    const playBtn = songItem.querySelector('.play-btn');
+    
+    // Dừng audio đang phát khác
+    if (currentAudio !== null && currentAudio !== index) {
+        document.getElementById(`audio-${currentAudio}`).pause();
+        document.getElementById(`song-${currentAudio}`).classList.remove('active');
+        document.getElementById(`song-${currentAudio}`).querySelector('.play-btn').textContent = '▶';
+    }
+    
+    if (audio.paused) {
+        audio.play();
+        songItem.classList.add('active');
+        playBtn.textContent = '⏸';
+        currentAudio = index;
+    } else {
+        audio.pause();
+        songItem.classList.remove('active');
+        playBtn.textContent = '▶';
+        currentAudio = null;
+    }
+}
+        // ========== QUIZ ==========
+        const quizQuestions = [
+            {
+                question: 'Tết Nguyên Đán thường diễn ra vào tháng nào?',
+                options: ['Tháng 1 dương lịch', 'Tháng 1-2 âm lịch', 'Tháng 12 dương lịch', 'Tháng 3 âm lịch'],
+                correct: 1
+            },
+            {
+                question: 'Bánh nào là biểu tượng của Tết ở miền Bắc?',
+                options: ['Bánh tét', 'Bánh chưng', 'Bánh giầy', 'Bánh dày'],
+                correct: 1
+            },
+            {
+                question: 'Màu sắc nào tượng trưng cho may mắn trong ngày Tết?',
+                options: ['Màu xanh', 'Màu trắng', 'Màu đỏ', 'Màu đen'],
+                correct: 2
+            },
+            {
+                question: 'Cây gì là biểu tượng của Tết miền Nam?',
+                options: ['Cây đào', 'Cây mai vàng', 'Cây quất', 'Cây phong'],
+                correct: 1
+            },
+            {
+                question: '"Lì xì" có ý nghĩa gì?',
+                options: ['Tiền thưởng cuối năm', 'Tiền mừng tuổi, chúc may mắn', 'Tiền đi chợ Tết', 'Tiền mua quần áo mới'],
+                correct: 1
+            },
+            {
+                question: 'Đêm giao thừa là thời điểm nào?',
+                options: ['Tối 29 tháng Chạp', 'Tối 30 tháng Chạp sang mùng 1', 'Sáng mùng 1 Tết', 'Trưa mùng 1 Tết'],
+                correct: 1
+            },
+            {
+                question: 'Món ăn nào thường có trong mâm cỗ Tết miền Nam?',
+                options: ['Thịt đông', 'Thịt kho tàu', 'Nem rán', 'Phở bò'],
+                correct: 1
+            },
+            {
+                question: 'Người xông đất đầu năm nên có đặc điểm gì?',
+                options: ['Tuổi hợp với gia chủ', 'Là người giàu có', 'Là người lớn tuổi', 'Là trẻ em'],
+                correct: 0
+            }
+        ];
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+        function initQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            answered = false;
+            renderQuestion();
+        }
+        function renderQuestion() {
+            const container = document.getElementById('quizContainer');
+            const q = quizQuestions[currentQuestion];
+            
+            container.innerHTML = `
+                <div class="quiz-card">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-info">
+                            <span>Câu ${currentQuestion + 1}/${quizQuestions.length}</span>
+                            <span>Điểm: ${score}</span>
+                        </div>
+                        <div class="quiz-progress-bar">
+                            <div class="quiz-progress-fill" style="width: ${((currentQuestion + 1) / quizQuestions.length) * 100}%"></div>
+                        </div>
+                    </div>
+                    <h3 class="quiz-question">${q.question}</h3>
+                    <div class="quiz-options">
+                        ${q.options.map((opt, i) => `
+                            <button class="quiz-option" onclick="selectAnswer(${i})" id="option-${i}">
+                                ${opt}
+                            </button>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+        function selectAnswer(index) {
+            if (answered) return;
+            answered = true;
+            const correct = quizQuestions[currentQuestion].correct;
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach((opt, i) => {
+                opt.disabled = true;
+                if (i === correct) {
+                    opt.classList.add('correct');
+                } else if (i === index && i !== correct) {
+                    opt.classList.add('incorrect');
+                }
+            });
+            if (index === correct) {
+                score++;
+            }
+            setTimeout(() => {
+                answered = false;
+                if (currentQuestion < quizQuestions.length - 1) {
+                    currentQuestion++;
+                    renderQuestion();
+                } else {
+                    showResult();
+                }
+            }, 1500);
+        }
+        function showResult() {
+            const container = document.getElementById('quizContainer');
+            const percentage = (score / quizQuestions.length) * 100;
+            let message = '';
+            
+            if (percentage >= 80) message = 'Xuất sắc! Bạn hiểu rất rõ về Tết Việt Nam! 🎉';
+            else if (percentage >= 60) message = 'Tốt lắm! Bạn có kiến thức khá về Tết! 👏';
+            else if (percentage >= 40) message = 'Khá tốt! Hãy tìm hiểu thêm về Tết nhé! 📚';
+            else message = 'Cố gắng hơn nha! Hãy đọc thêm về Tết Việt Nam! 💪';
+            container.innerHTML = `
+                <div class="quiz-result">
+                    <div class="result-icon">🏆</div>
+                    <h3>Kết quả</h3>
+                    <p class="result-score">${score}/${quizQuestions.length}</p>
+                    <p class="result-message">${message}</p>
+                    <button class="btn btn-primary" onclick="initQuiz()">🔄 Chơi lại</button>
+                </div>
+            `;
+        }
+        // Initialize quiz
+        initQuiz();
+          // ========== COMMENTS ==========
+        let comments = JSON.parse(localStorage.getItem('tetComments')) || [];
+        function renderComments() {
+            const list = document.getElementById('commentsList');
+            const countEl = document.getElementById('commentCount');
+            countEl.textContent = comments.length;
+            list.innerHTML = comments.map(c => `
+                <div class="comment-card">
+                    <div class="comment-avatar">👤</div>
+                    <div class="comment-body">
+                        <div class="comment-meta">
+                            <span class="comment-name">${escapeHtml(c.name)}</span>
+                            <span class="comment-time">${c.timestamp}</span>
+                        </div>
+                        <p class="comment-text">${escapeHtml(c.content)}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        function formatDate(date) {
+            const d = new Date(date);
+            return d.toLocaleString('vi-VN', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+        // Comment form handling
+        const commentForm = document.getElementById('commentForm');
+        const commentContent = document.getElementById('commentContent');
+        const charCount = document.getElementById('charCount');
+        commentContent.addEventListener('input', () => {
+            charCount.textContent = commentContent.value.length;
+        });
+        commentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('commentName').value.trim();
+            const content = commentContent.value.trim();
+            if (!name || !content) {
+                alert('Vui lòng nhập đầy đủ tên và nội dung bình luận!');
+                return;
+            }
+            if (name.length > 50) {
+                alert('Tên không được quá 50 ký tự!');
+                return;
+            }
+            if (content.length > 500) {
+                alert('Nội dung bình luận không được quá 500 ký tự!');
+                return;
+            }
+            const newComment = {
+                id: Date.now(),
+                name: name,
+                content: content,
+                timestamp: formatDate(new Date())
+            };
+            comments.unshift(newComment);
+            localStorage.setItem('tetComments', JSON.stringify(comments));
+            
+            document.getElementById('commentName').value = '';
+            commentContent.value = '';
+            charCount.textContent = '0';
+            
+            renderComments();
+        });
+        // Initialize comments
+        renderComments();
+    </script>
+</body>
