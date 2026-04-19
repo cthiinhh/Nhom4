@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hướng Nghiệp CNTT — Bách Khoa Hà Nội & Học viện KTQS</title>
+  <meta name="description" content="Tìm hiểu ngành Công nghệ Thông tin tại ĐH Bách Khoa Hà Nội và ứng dụng CNTT trong Quân sự Quốc phòng tại Học viện Kỹ thuật Quân sự." />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#" onclick="goPage('home');return false;" class="nav-brand">
+      <span class="nav-brand-badge">IT</span>
+      <span>Hướng Nghiệp CNTT</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" data-page="home" onclick="goPage('home');return false;" class="active">Trang chủ</a></li>
+      <li><a href="#" data-page="hust" onclick="goPage('hust');return false;">Bách Khoa Hà Nội</a></li>
+      <li><a href="#" data-page="mta" onclick="goPage('mta');return false;">Học viện KTQS</a></li>
+      <li><a href="#" data-page="compare" onclick="goPage('compare');return false;">So sánh</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================== HOME ============================== -->
+<main id="page-home" class="page active">
+  <section class="hero" data-watermark="HOME">
+    <img class="bg" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1920&q=80" alt="Công nghệ thông tin và giáo dục" />
+    <div class="overlay"></div>
+    <div class="content reveal">
+      <h1>Hướng Nghiệp<br/><span class="text-gradient">Công Nghệ Thông Tin</span></h1>
+      <p class="lead">Khám phá cơ hội học tập và nghề nghiệp trong lĩnh vực CNTT tại hai cơ sở đào tạo hàng đầu Việt Nam.</p>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="goPage('hust')">ĐH Bách Khoa Hà Nội →</button>
+        <button class="btn btn-outline" onclick="goPage('mta')">Học viện KTQS →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-watermark="CAREER">
+    <div class="container" style="text-align:center">
+      <h2 class="section-title reveal">Hai Hướng Đi — Một Đam Mê</h2>
+      <p class="section-sub reveal" style="margin-left:auto;margin-right:auto">Ngành Công nghệ Thông tin mở ra vô vàn cơ hội. Dù bạn chọn con đường học thuật dân sự hay phục vụ quốc phòng, CNTT luôn là nền tảng vững chắc cho tương lai.</p>
+    </div>
+    <div class="container" style="margin-top:2.5rem">
+      <div class="grid grid-2">
+        <a href="#" onclick="goPage('hust');return false;" class="card card-link reveal reveal-left">
+          <div class="img">
+            <img src="https://xdcs.cdnchinhphu.vn/446259493575335936/2022/12/5/bkhn-c1-16702142784341515744966.jpg" alt="ĐH Bách Khoa Hà Nội" />
+            <span class="badge">Dân sự</span>
+          </div>
+          <div class="body">
+            <h3>ĐH Bách Khoa Hà Nội</h3>
+            <p>Khoa Công nghệ Thông tin — Trường đại học kỹ thuật hàng đầu Việt Nam. Tìm hiểu chương trình đào tạo, tuyển sinh và cơ hội việc làm ngành Khoa học Máy tính.</p>
+            <p style="color:var(--accent-cyan);font-weight:600;margin-top:.75rem">Xem chi tiết →</p>
+          </div>
+        </a>
+        <a href="#" onclick="goPage('mta');return false;" class="card card-link reveal reveal-right">
+          <div class="img">
+            <img src="https://i2-vnexpress.vnecdn.net/2023/08/23/hv-kt-qs-jpeg-1692761583-3357-1692761659.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=XfX5U3ZIPpAyIh9YDV-lUg" alt="Học viện Kỹ thuật Quân sự" />
+            <span class="badge">Quân sự</span>
+          </div>
+          <div class="body">
+            <h3>Học viện Kỹ thuật Quân sự</h3>
+            <p>Ngành Quân sự Quốc phòng với ứng dụng CNTT — An ninh mạng, tác chiến điện tử, hệ thống chỉ huy thông minh và nhiều hơn nữa.</p>
+            <p style="color:var(--accent-cyan);font-weight:600;margin-top:.75rem">Xem chi tiết →</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-alt" data-watermark="STATS">
+    <div class="container">
+      <div class="stats reveal">
+        <div><div class="num">65+</div><div class="label">Năm lịch sử Bách Khoa</div></div>
+        <div><div class="num">50+</div><div class="label">Năm Học viện KTQS</div></div>
+        <div><div class="num">90%+</div><div class="label">Sinh viên IT có việc làm</div></div>
+        <div><div class="num">Top 3</div><div class="label">Ngành hot nhất VN</div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================== HUST ============================== -->
+<main id="page-hust" class="page">
+  <section class="hero" data-watermark="HUST">
+    <img class="bg" src="https://soict.hust.edu.vn/wp-content/uploads/B1-Cover-Web.jpg" alt="ĐH Bách Khoa Hà Nội" />
+    <div class="overlay"></div>
+    <div class="content reveal">
+      <span class="tag">ĐẠI HỌC BÁCH KHOA HÀ NỘI</span>
+      <h1 class="text-gradient" style="margin-top:1rem">Khoa Công nghệ Thông tin</h1>
+      <p class="lead">Trường Công nghệ Thông tin và Truyền thông — Nơi đào tạo nguồn nhân lực CNTT chất lượng cao hàng đầu Việt Nam.</p>
+    </div>
+  </section>
+
+  <section class="block" data-watermark="ABOUT">
+    <div class="container">
+      <h2 class="section-title reveal">1. Giới thiệu khái quát</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="zigzag reveal">
+        <div class="zz-img reveal-left">
+          <img src="https://cdn2.tuoitre.vn/thumb_w/480/2022/12/6/dhbkhn-6920-1658994052-1-16702134834751920701721-16702897401291887925724.jpg" alt="Khuôn viên Bách Khoa" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-right">
+          <h3>Lịch sử hình thành</h3>
+          <p>Đại học Bách Khoa Hà Nội (HUST) được thành lập năm <strong>1956</strong>, là trường đại học kỹ thuật đầu tiên và lớn nhất Việt Nam. Trải qua hơn 65 năm phát triển, HUST đã trở thành biểu tượng của nền giáo dục kỹ thuật Việt Nam.</p>
+          <p>Khoa Công nghệ Thông tin được thành lập từ những năm 1980, nay phát triển thành <strong>Trường Công nghệ Thông tin và Truyền thông (SoICT)</strong> — đơn vị đào tạo CNTT quy mô và uy tín nhất.</p>
+        </div>
+      </div>
+
+      <div class="zigzag reverse reveal">
+        <div class="zz-img reveal-right">
+          <img src="https://kenh14cdn.com/203336854389633024/2023/12/15/photo-9-17026256840321483895862.jpg" alt="Sinh viên SoICT" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-left">
+          <h3>Tình hình hiện tại</h3>
+          <p>Hiện tại, HUST nằm trong <strong>Top 3 đại học tốt nhất Việt Nam</strong> theo nhiều bảng xếp hạng quốc tế (QS, THE). Trường có hơn 35.000 sinh viên, trong đó SoICT chiếm khoảng 5.000+ sinh viên các hệ.</p>
+          <p>Từ 2024, HUST chuyển sang mô hình <strong>đại học tự chủ</strong>, hợp tác với hơn 200 đối tác toàn cầu.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:2rem">
+        <h3>Nét riêng đáng chú ý</h3>
+        <ul>
+          <li><strong>Thương hiệu "Bách Khoa":</strong> Tấm vé thông hành uy tín với nhà tuyển dụng trong và ngoài nước.</li>
+          <li><strong>Nghiên cứu khoa học mạnh:</strong> Lab AI, IoT, Big Data, An ninh mạng hợp tác Samsung, Toshiba, VNPT.</li>
+          <li><strong>Chương trình ELITECH:</strong> Kỹ sư tài năng giảng dạy bằng tiếng Anh, cơ hội du học trao đổi.</li>
+          <li><strong>Mạng lưới alumni:</strong> Hàng ngàn cựu sinh viên giữ vị trí cao tại FPT, Viettel, Samsung, Google...</li>
+          <li><strong>Hệ sinh thái khởi nghiệp:</strong> BK Holdings, vườn ươm BK Innovation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-alt" data-watermark="MAJORS">
+    <div class="container">
+      <h2 class="section-title reveal">2. Lĩnh vực "Máy tính và CNTT"</h2>
+      <div class="section-divider reveal"></div>
+      <p class="section-sub reveal">Trường SoICT đào tạo các ngành thuộc lĩnh vực Máy tính và CNTT với quy mô lớn nhất cả nước:</p>
+
+      <div class="zigzag reveal" style="margin-top:1.5rem">
+        <div class="zz-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&q=80" alt="Bảng mạch, kỹ thuật máy tính" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-right">
+          <p>Từ nền tảng lý thuyết đến phần cứng, từ AI tới an toàn thông tin — sinh viên SoICT có 6 chuyên ngành để lựa chọn theo đam mê.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:2rem">
+        <div class="card reveal"><h3>IT1 — Khoa học Máy tính</h3><p>Nền tảng lý thuyết và thuật toán, nghiên cứu AI/ML.</p></div>
+        <div class="card reveal"><h3>IT2 — Kỹ thuật Máy tính</h3><p>Phần cứng, hệ thống nhúng, kiến trúc máy tính.</p></div>
+        <div class="card reveal"><h3>IT-E — Công nghệ Thông tin</h3><p>Phát triển phần mềm, hệ thống thông tin, CSDL.</p></div>
+        <div class="card reveal"><h3>IT-AI — Trí tuệ Nhân tạo</h3><p>Machine Learning, Deep Learning, Computer Vision.</p></div>
+        <div class="card reveal"><h3>IT-S — An toàn Thông tin</h3><p>Bảo mật, mật mã học, phòng chống tấn công mạng.</p></div>
+        <div class="card reveal"><h3>IT-DS — Khoa học Dữ liệu</h3><p>Phân tích dữ liệu lớn, thống kê, trực quan hóa.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-watermark="DETAIL">
+    <div class="container">
+      <h2 class="section-title reveal">3. Chi tiết: Ngành Khoa học Máy tính</h2>
+      <div class="section-divider reveal"></div>
+
+      <h3 class="reveal" style="margin-top:2rem">🎓 Thông tin tuyển sinh</h3>
+      <div class="table-wrap reveal">
+        <table>
+          <thead><tr><th>Tiêu chí</th><th>Chi tiết</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Tổ hợp xét tuyển</strong></td><td>A00 (Toán-Lý-Hóa), A01 (Toán-Lý-Anh), D07 (Toán-Hóa-Anh)</td></tr>
+            <tr><td><strong>Phương thức</strong></td><td>Thi ĐGNL (TSA) của HUST, xét THPTQG, xét học bạ + chứng chỉ quốc tế</td></tr>
+            <tr><td><strong>Chỉ tiêu</strong></td><td>~300–400 sinh viên/năm (chương trình chuẩn + ELITECH)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- BIỂU ĐỒ ĐIỂM CHUẨN -->
+      <div class="chart-box reveal">
+        <h4>📊 Biểu đồ điểm chuẩn ngành Khoa học Máy tính (IT1) — HUST</h4>
+        <p style="font-size:.8rem;color:var(--muted-fg);margin-top:.25rem">Phương thức xét điểm thi THPT, thang điểm 30. Đây là ngành có điểm chuẩn cao nhất Bách Khoa Hà Nội nhiều năm liên tiếp.</p>
+
+        <svg class="chart-svg" viewBox="0 0 720 320" role="img" aria-label="Biểu đồ điểm chuẩn KHMT 2020-2024">
+          <defs>
+            <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#1e40af"/>
+              <stop offset="50%" stop-color="#0ea5e9"/>
+              <stop offset="100%" stop-color="#5eead4"/>
+            </linearGradient>
+          </defs>
+          <g stroke="rgba(255,255,255,.08)" stroke-dasharray="3 3">
+            <line x1="50" y1="30" x2="696" y2="30"/>
+            <line x1="50" y1="75" x2="696" y2="75"/>
+            <line x1="50" y1="120" x2="696" y2="120"/>
+            <line x1="50" y1="165" x2="696" y2="165"/>
+            <line x1="50" y1="210" x2="696" y2="210"/>
+            <line x1="50" y1="255" x2="696" y2="255"/>
+          </g>
+          <g fill="rgba(255,255,255,.55)" font-size="10" text-anchor="end" font-family="Inter,sans-serif">
+            <text x="42" y="34">30.0</text>
+            <text x="42" y="79">29.5</text>
+            <text x="42" y="124">29.0</text>
+            <text x="42" y="169">28.5</text>
+            <text x="42" y="214">28.0</text>
+            <text x="42" y="259">27.5</text>
+            <text x="42" y="274">27.0</text>
+          </g>
+          <path d="M 50 86 L 211.5 141 L 373 154 L 534.5 52 L 696 132 L 696 270 L 50 270 Z" fill="url(#areaGrad)"/>
+          <path d="M 50 86 L 211.5 141 L 373 154 L 534.5 52 L 696 132" fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+          <g>
+            <circle cx="50" cy="86" r="6" fill="#5eead4" stroke="#0c1e3e" stroke-width="2"/>
+            <text x="50" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Inter,sans-serif">29.04</text>
+            <circle cx="211.5" cy="141" r="6" fill="#5eead4" stroke="#0c1e3e" stroke-width="2"/>
+            <text x="211.5" y="127" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Inter,sans-serif">28.43</text>
+            <circle cx="373" cy="154" r="6" fill="#5eead4" stroke="#0c1e3e" stroke-width="2"/>
+            <text x="373" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Inter,sans-serif">28.29</text>
+            <circle cx="534.5" cy="52" r="6" fill="#5eead4" stroke="#0c1e3e" stroke-width="2"/>
+            <text x="534.5" y="38" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Inter,sans-serif">29.42</text>
+            <circle cx="696" cy="132" r="6" fill="#5eead4" stroke="#0c1e3e" stroke-width="2"/>
+            <text x="696" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Inter,sans-serif">28.53</text>
+          </g>
+          <g fill="rgba(255,255,255,.55)" font-size="11" text-anchor="middle" font-family="Inter,sans-serif">
+            <text x="50" y="290">2020</text>
+            <text x="211.5" y="290">2021</text>
+            <text x="373" y="290">2022</text>
+            <text x="534.5" y="290">2023</text>
+            <text x="696" y="290">2024</text>
+          </g>
+          <text x="50" y="20" font-size="10" fill="rgba(255,255,255,.55)" font-family="Inter,sans-serif">Điểm</text>
+        </svg>
+
+        <div class="chart-stats">
+          <div class="stat s-1"><div class="l">Cao nhất</div><div class="v text-gradient">29.42</div><div class="h">Năm 2023 — kỷ lục</div></div>
+          <div class="stat s-2"><div class="l">Trung bình 5 năm</div><div class="v">28.74</div><div class="h">Top đầu cả nước</div></div>
+          <div class="stat s-3"><div class="l">Năm 2024</div><div class="v">28.53</div><div class="h">Hạ nhiệt nhẹ</div></div>
+        </div>
+
+        <p style="margin-top:1rem;font-size:.75rem;font-style:italic;color:var(--muted-fg)">Nguồn: Đề án tuyển sinh ĐH Bách Khoa Hà Nội 2020–2024, <a href="https://ts.hust.edu.vn" target="_blank" rel="noreferrer">ts.hust.edu.vn</a>; tổng hợp báo VnExpress, Tuổi Trẻ.</p>
+      </div>
+
+      <h3 class="reveal" style="margin-top:3rem">📚 Kiến thức & Kỹ năng được trang bị</h3>
+
+      <div class="zigzag reveal">
+        <div class="zz-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&q=80" alt="Code editor" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-right">
+          <div class="card">
+            <h3>Kiến thức nền tảng</h3>
+            <ul>
+              <li>Toán cao cấp, Xác suất Thống kê, Toán rời rạc</li>
+              <li>Cấu trúc dữ liệu & Giải thuật</li>
+              <li>Kiến trúc máy tính, Hệ điều hành</li>
+              <li>Mạng máy tính, Cơ sở dữ liệu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="zigzag reverse reveal">
+        <div class="zz-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1000&q=80" alt="AI machine learning" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-left">
+          <div class="card">
+            <h3>Kiến thức chuyên sâu</h3>
+            <ul>
+              <li>Trí tuệ Nhân tạo & Machine Learning</li>
+              <li>Công nghệ phần mềm, DevOps</li>
+              <li>NLP, Computer Vision</li>
+              <li>An toàn & bảo mật thông tin</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="reveal" style="margin-top:3rem">💼 Cơ hội việc làm</h3>
+
+      <div class="zigzag reveal">
+        <div class="zz-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1000&q=80" alt="Team developer" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-right">
+          <div class="card">
+            <h3>Vị trí có thể đảm nhận</h3>
+            <ul>
+              <li>Software Engineer, Data Scientist</li>
+              <li>AI / ML Engineer</li>
+              <li>Security Analyst</li>
+              <li>Solution Architect, Tech PM</li>
+            </ul>
+          </div>
+          <div class="card" style="margin-top:1rem">
+            <h3>Nhà tuyển dụng tiềm năng</h3>
+            <ul>
+              <li><strong>Việt Nam:</strong> FPT, Viettel, VNPT, CMC, VNG, MoMo</li>
+              <li><strong>Quốc tế:</strong> Samsung, LG, Bosch</li>
+              <li><strong>Big Tech:</strong> Google, Microsoft, Amazon</li>
+              <li><strong>Tài chính:</strong> Techcombank, VPBank, Deloitte</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="reveal" style="margin-top:3rem">📈 Nhu cầu nhân lực</h3>
+      <div class="card reveal" style="margin-top:1rem">
+        <div class="grid grid-2">
+          <div>
+            <h3>Hiện tại</h3>
+            <ul>
+              <li>Việt Nam thiếu <strong>150.000–200.000</strong> nhân lực CNTT mỗi năm.</li>
+              <li>Lương khởi điểm HUST: <strong>12–20 triệu/tháng</strong>; có kinh nghiệm: 25–60 triệu.</li>
+              <li>Tỷ lệ có việc làm sau 6 tháng: <strong>trên 95%</strong>.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tương lai gần (2025–2030)</h3>
+            <ul>
+              <li>Mục tiêu <strong>1 triệu</strong> nhân lực CNTT đến 2030.</li>
+              <li>Lĩnh vực nóng: Bán dẫn, AI, An ninh mạng, Fintech.</li>
+              <li>Samsung, Intel, Qualcomm đầu tư R&D tại Việt Nam.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="reveal" style="margin-top:3rem">📑 Trích dẫn nguồn</h3>
+      <div class="sources reveal">
+        <ol>
+          <li>Trang tuyển sinh chính thức ĐH Bách Khoa Hà Nội — <a href="https://ts.hust.edu.vn" target="_blank">ts.hust.edu.vn</a></li>
+          <li>Trường Công nghệ Thông tin và Truyền thông (SoICT) — <a href="https://soict.hust.edu.vn" target="_blank">soict.hust.edu.vn</a></li>
+          <li>Đề án tuyển sinh ĐH Bách Khoa Hà Nội 2022, 2023, 2024 (công bố trên cổng tuyển sinh HUST).</li>
+          <li>Báo cáo "Thị trường IT Việt Nam 2024" — TopDev, <a href="https://topdev.vn/blog/bao-cao-thi-truong-it-viet-nam/" target="_blank">topdev.vn</a></li>
+          <li>Bộ Thông tin & Truyền thông — Chiến lược phát triển nhân lực CNTT đến 2030, <a href="https://mic.gov.vn" target="_blank">mic.gov.vn</a></li>
+          <li>Bảng xếp hạng QS World University Rankings, Times Higher Education (THE) — 2024.</li>
+          <li>Báo VnExpress, Tuổi Trẻ — chuyên mục Tuyển sinh Đại học 2022–2024.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================== MTA ============================== -->
+<main id="page-mta" class="page">
+  <section class="hero military" data-watermark="MTA">
+    <img class="bg" src="https://armygames.vn/wp-content/uploads/2023/12/quan-doi-nhan-dan-viet-nam-gom-luc-luong-nao-1.jpg" alt="Học viện Kỹ thuật Quân sự" />
+    <div class="overlay"></div>
+    <div class="content reveal">
+      <span class="tag">HỌC VIỆN KỸ THUẬT QUÂN SỰ (MTA)</span>
+      <h1 class="text-gradient" style="margin-top:1rem">Quân sự Quốc phòng &<br/>Ứng dụng CNTT</h1>
+      <p class="lead">Khám phá vai trò then chốt của Công nghệ Thông tin trong lĩnh vực quân sự — quốc phòng hiện đại.</p>
+    </div>
+  </section>
+
+  <section class="block" data-watermark="DEFENSE">
+    <div class="container">
+      <h2 class="section-title reveal">1. Giới thiệu khái quát về ngành Quân sự — Quốc phòng</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="zigzag reveal">
+        <div class="zz-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?w=1000&q=80" alt="Học viện quân sự" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-right">
+          <h3>Lịch sử hình thành</h3>
+          <p>Học viện Kỹ thuật Quân sự (MTA) thành lập năm <strong>1966</strong>, trong kháng chiến chống Mỹ, đào tạo cán bộ kỹ thuật cho quân đội. Gần 60 năm phát triển, MTA trở thành <strong>cơ sở đào tạo và nghiên cứu quân sự hàng đầu Đông Nam Á</strong>.</p>
+          <p>Từ những năm 1990, MTA đã ứng dụng máy tính vào hệ thống chỉ huy, điều khiển vũ khí và mật mã.</p>
+        </div>
+      </div>
+
+      <div class="zigzag reverse reveal">
+        <div class="zz-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000&q=80" alt="Server room quân sự" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-left">
+          <h3>Tình hình hiện tại</h3>
+          <p>CNTT đóng vai trò <strong>xương sống</strong> trong mọi hoạt động quân sự hiện đại. QĐND Việt Nam đang đẩy mạnh <strong>chuyển đổi số</strong>, xây dựng quân đội thông minh.</p>
+          <p>MTA đào tạo hàng trăm chuyên gia CNTT quân sự mỗi năm cho Bộ Tư lệnh 86, Cục Cơ yếu, các quân chủng.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:2rem">
+        <h3>Ứng dụng CNTT trong Quân sự — Quốc phòng</h3>
+        <div class="grid grid-2" style="margin-top:1rem">
+          <div><strong>An ninh mạng quân sự:</strong> Bảo vệ hệ thống thông tin quốc phòng, phòng chống tấn công mạng.</div>
+          <div><strong>Tác chiến điện tử (EW):</strong> Gây nhiễu, chống nhiễu radar, trinh sát điện tử.</div>
+          <div><strong>Hệ thống chỉ huy C4ISR:</strong> Tích hợp CNTT toàn diện cho chỉ huy tác chiến.</div>
+          <div><strong>Mật mã & Bảo mật:</strong> Mã hóa thông tin liên lạc quân sự.</div>
+          <div><strong>UAV & Robot quân sự:</strong> Drone trinh sát, robot rà phá bom mìn.</div>
+          <div><strong>GIS & Bản đồ số:</strong> Hệ thống thông tin địa lý phục vụ tác chiến.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-alt" data-watermark="ROLES">
+    <div class="container">
+      <h2 class="section-title reveal">2. Công việc chính của chuyên viên CNTT trong Quân sự</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="zigzag reveal" style="margin-top:1.5rem">
+        <div class="zz-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1000&q=80" alt="Cybersecurity" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-right">
+          <p>Sáu vai trò trọng yếu — từ giám sát an ninh mạng đến phát triển AI quân sự — đều cần kiến thức CNTT chuyên sâu kết hợp với kỷ luật quân đội.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:2rem">
+        <div class="card reveal"><h3>Chuyên gia An ninh mạng</h3><p>Giám sát, phát hiện và phản ứng tấn công mạng nhằm vào hệ thống quốc phòng.</p></div>
+        <div class="card reveal"><h3>Kỹ sư Tác chiến điện tử</h3><p>Phát triển thiết bị gây nhiễu, thu thập SIGINT, trinh sát radar.</p></div>
+        <div class="card reveal"><h3>Kỹ sư Hệ thống C4ISR</h3><p>Thiết kế, triển khai hệ thống chỉ huy tác chiến tích hợp.</p></div>
+        <div class="card reveal"><h3>Chuyên viên Mật mã</h3><p>Nghiên cứu thuật toán mã hóa bảo vệ thông tin quân sự.</p></div>
+        <div class="card reveal"><h3>Kỹ sư Phần mềm Quân sự</h3><p>Phần mềm mô phỏng chiến đấu, quản lý hậu cần, huấn luyện ảo VR/AR.</p></div>
+        <div class="card reveal"><h3>Chuyên gia AI Quân sự</h3><p>Nhận dạng mục tiêu, phân tích ảnh vệ tinh, hỗ trợ ra quyết định.</p></div>
+      </div>
+
+      <h3 class="reveal" style="margin-top:3rem">📚 Kiến thức & Kỹ năng cần có</h3>
+
+      <div class="zigzag reveal">
+        <div class="zz-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1000&q=80" alt="Code C++ Linux" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-right">
+          <div class="card">
+            <h3>Kiến thức chuyên môn CNTT</h3>
+            <ul>
+              <li>Mạng máy tính & truyền thông quân sự</li>
+              <li>An toàn thông tin, mật mã học</li>
+              <li>Lập trình C, C++, Python, Assembly</li>
+              <li>Linux, hệ thống nhúng, AI, xử lý tín hiệu số</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="zigzag reverse reveal">
+        <div class="zz-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=1000&q=80" alt="Quân nhân" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-left">
+          <div class="card">
+            <h3>Kỹ năng đặc thù quân sự</h3>
+            <ul>
+              <li>Kỷ luật, tác phong quân sự nghiêm minh</li>
+              <li>Bảo mật thông tin tuyệt đối</li>
+              <li>Làm việc dưới áp lực cao</li>
+              <li>Thể lực tốt, ngoại ngữ Anh/Nga</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="reveal" style="margin-top:3rem">💼 Cơ hội việc làm & Nhu cầu nhân lực</h3>
+
+      <div class="zigzag reveal">
+        <div class="zz-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1000&q=80" alt="UAV drone" loading="lazy"/>
+        </div>
+        <div class="zz-text reveal-right">
+          <div class="card">
+            <h3>Nơi làm việc</h3>
+            <ul>
+              <li><strong>Bộ Tư lệnh 86:</strong> Tác chiến không gian mạng</li>
+              <li><strong>Ban Cơ yếu Chính phủ:</strong> Mật mã quốc gia</li>
+              <li><strong>Quân khu, Quân chủng:</strong> Hệ thống CNTT QS</li>
+              <li><strong>Tổng cục CNQP:</strong> R&D vũ khí thông minh</li>
+              <li><strong>Viettel R&D:</strong> Doanh nghiệp quân đội</li>
+            </ul>
+          </div>
+          <div class="card" style="margin-top:1rem">
+            <h3>Nhu cầu nhân lực</h3>
+            <ul>
+              <li>Nhu cầu chuyên gia ATTT quân sự <strong>tăng mạnh</strong>.</li>
+              <li>"Chuyển đổi số trong Quốc phòng" cần hàng <strong>nghìn chuyên gia</strong>.</li>
+              <li>Viettel liên tục tuyển dụng kỹ sư CNTT quy mô lớn.</li>
+              <li>Quân đội thông minh: AI, drone, robot.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="reveal" style="margin-top:3rem">📑 Trích dẫn nguồn</h3>
+      <div class="sources reveal">
+        <ol>
+          <li>Cổng thông tin chính thức Học viện Kỹ thuật Quân sự — <a href="https://mta.edu.vn" target="_blank">mta.edu.vn</a></li>
+          <li>Bộ Quốc phòng Việt Nam — Sách trắng Quốc phòng 2019, <a href="https://mod.gov.vn" target="_blank">mod.gov.vn</a></li>
+          <li>Bộ Tư lệnh Tác chiến không gian mạng (Bộ Tư lệnh 86) — báo Quân đội Nhân dân, <a href="https://www.qdnd.vn" target="_blank">qdnd.vn</a></li>
+          <li>Tập đoàn Viettel — báo cáo nhân lực CNTT 2023, <a href="https://viettel.com.vn" target="_blank">viettel.com.vn</a></li>
+          <li>Đề án "Chuyển đổi số trong Bộ Quốc phòng đến 2025, định hướng 2030".</li>
+          <li>Tài liệu: "C4ISR Systems & Military Information Technology" — Defense Technical Information Center (DTIC).</li>
+          <li>Báo VnExpress, Tuổi Trẻ, Quân đội Nhân dân — chuyên mục Quốc phòng & Khoa học Quân sự, 2022–2024.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================== COMPARE ============================== -->
+<main id="page-compare" class="page">
+  <section class="hero" data-watermark="VS">
+    <img class="bg" src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1920&q=80" alt="" />
+    <div class="overlay"></div>
+    <div class="content reveal">
+      <span class="tag">SO SÁNH 2 CƠ SỞ ĐÀO TẠO</span>
+      <h1 class="text-gradient" style="margin-top:1rem">HUST &nbsp;vs&nbsp; MTA</h1>
+      <p class="lead">So sánh trực diện giữa Đại học Bách Khoa Hà Nội và Học viện Kỹ thuật Quân sự ở góc độ đào tạo và nghề nghiệp Công nghệ Thông tin.</p>
+    </div>
+  </section>
+
+  <section class="block" data-watermark="OVERVIEW">
+    <div class="container">
+      <div class="compare-grid">
+        <div class="compare-card reveal reveal-left">
+          <span class="badge-h">HUST</span>
+          <h2 style="margin-top:.75rem">ĐH Bách Khoa Hà Nội</h2>
+          <p style="margin-top:.5rem;color:var(--muted-fg);font-size:.9rem">Môi trường học thuật mở, định hướng công nghiệp & doanh nghiệp.</p>
+          <ul style="margin-top:1rem;padding-left:1.25rem;color:var(--muted-fg);font-size:.9rem">
+            <li>✓ Hệ sinh thái doanh nghiệp công nghệ rộng</li>
+            <li>✓ Cơ hội du học, làm việc quốc tế</li>
+            <li>✓ Mức lương khởi điểm cao</li>
+            <li>✗ Học phí cao hơn, không bao cấp</li>
+          </ul>
+        </div>
+        <div class="compare-card reveal reveal-right">
+          <span class="badge-m">MTA</span>
+          <h2 style="margin-top:.75rem">Học viện Kỹ thuật Quân sự</h2>
+          <p style="margin-top:.5rem;color:var(--muted-fg);font-size:.9rem">Môi trường quân đội kỷ luật, miễn học phí, ra trường là sĩ quan.</p>
+          <ul style="margin-top:1rem;padding-left:1.25rem;color:var(--muted-fg);font-size:.9rem">
+            <li>✓ Miễn học phí, có phụ cấp</li>
+            <li>✓ Việc làm ổn định, đảm bảo đầu ra</li>
+            <li>✓ Bảo vệ Tổ quốc trên mặt trận công nghệ</li>
+            <li>✗ Yêu cầu sức khỏe, lý lịch nghiêm ngặt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-alt" data-watermark="TABLE">
+    <div class="container">
+      <h2 class="section-title reveal">Bảng so sánh chi tiết</h2>
+      <div class="section-divider reveal"></div>
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Tiêu chí</th>
+              <th class="th-hust">HUST — Bách Khoa HN</th>
+              <th class="th-mta">MTA — Học viện KTQS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Năm thành lập</strong></td><td>1956</td><td>1966</td></tr>
+            <tr><td><strong>Cơ quan chủ quản</strong></td><td>Bộ Giáo dục & Đào tạo</td><td>Bộ Quốc phòng</td></tr>
+            <tr><td><strong>Mô hình đào tạo</strong></td><td>Đại học tự chủ, dân sự</td><td>Học viện quân sự — kỷ luật quân đội</td></tr>
+            <tr><td><strong>Học phí</strong></td><td>~24–60 triệu/năm</td><td>Miễn phí — có phụ cấp</td></tr>
+            <tr><td><strong>Tổ hợp xét tuyển</strong></td><td>A00, A01, D07 + ĐGNL TSA</td><td>A00, A01 + sơ tuyển sức khỏe, lý lịch</td></tr>
+            <tr><td><strong>Điểm chuẩn CNTT (2024)</strong></td><td>~27.5–28.5 (KHMT)</td><td>~26.0–27.0</td></tr>
+            <tr><td><strong>Thời gian đào tạo</strong></td><td>4–4.5 năm</td><td>5 năm (kỹ sư quân sự)</td></tr>
+            <tr><td><strong>Định hướng CNTT</strong></td><td>AI, Data, Phần mềm, ATTT</td><td>An ninh mạng QS, EW, C4ISR, Mật mã</td></tr>
+            <tr><td><strong>Cơ hội việc làm</strong></td><td>FPT, Viettel, Samsung, Google...</td><td>Bộ Tư lệnh 86, Viettel, Cục Cơ yếu</td></tr>
+            <tr><td><strong>Đầu ra</strong></td><td>Tự do lựa chọn</td><td>Phân công trong quân đội (sĩ quan)</td></tr>
+            <tr><td><strong>Thu nhập khởi điểm</strong></td><td>12–20 triệu/tháng</td><td>Lương sĩ quan + phụ cấp đặc thù</td></tr>
+            <tr><td><strong>Yêu cầu sức khỏe</strong></td><td>Bình thường</td><td>Đạt tiêu chuẩn quân đội</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="reveal" style="margin-top:.75rem;font-size:.75rem;font-style:italic;color:var(--muted-fg)">Nguồn: Tổng hợp từ trang tuyển sinh chính thức HUST (<a href="https://ts.hust.edu.vn" target="_blank">ts.hust.edu.vn</a>) và MTA (<a href="https://mta.edu.vn" target="_blank">mta.edu.vn</a>), cập nhật 2024.</p>
+    </div>
+  </section>
+
+  <section class="block" data-watermark="CHOOSE">
+    <div class="container">
+      <h2 class="section-title reveal">Bạn nên chọn trường nào?</h2>
+      <div class="section-divider reveal"></div>
+      <div class="choose-grid">
+        <div class="choose-card reveal reveal-left">
+          <h3>Chọn HUST nếu bạn...</h3>
+          <ul style="margin-top:.75rem;padding-left:1.25rem;color:var(--muted-fg);font-size:.9rem">
+            <li>Muốn theo đuổi nghiên cứu AI, khởi nghiệp công nghệ</li>
+            <li>Mong muốn làm việc tại Big Tech, công ty quốc tế</li>
+            <li>Cần môi trường tự do sáng tạo, du học trao đổi</li>
+            <li>Không bị ràng buộc bởi điều kiện sức khỏe quân đội</li>
+          </ul>
+        </div>
+        <div class="choose-card mta reveal reveal-right">
+          <h3>Chọn MTA nếu bạn...</h3>
+          <ul style="margin-top:.75rem;padding-left:1.25rem;color:var(--muted-fg);font-size:.9rem">
+            <li>Có lý tưởng phục vụ trong quân đội, bảo vệ Tổ quốc</li>
+            <li>Muốn miễn học phí, có việc làm ổn định</li>
+            <li>Hứng thú an ninh mạng quân sự, tác chiến điện tử</li>
+            <li>Đáp ứng tiêu chuẩn sức khỏe, lý lịch quân đội</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="inner">
+    <div class="cols">
+      <div>
+        <h3 class="text-gradient">Hướng Nghiệp CNTT</h3>
+        <p style="font-size:.85rem;color:var(--muted-fg);margin-top:.5rem">Website tìm hiểu thông tin ngành Công nghệ Thông tin tại các trường đại học hàng đầu Việt Nam.</p>
+      </div>
+      <div>
+        <h4>Điều hướng</h4>
+        <a href="#" onclick="goPage('home');return false;">Trang chủ</a>
+        <a href="#" onclick="goPage('hust');return false;">ĐH Bách Khoa Hà Nội</a>
+        <a href="#" onclick="goPage('mta');return false;">Học viện KTQS</a>
+        <a href="#" onclick="goPage('compare');return false;">So sánh</a>
+      </div>
+      <div>
+        <h4>Nguồn tham khảo</h4>
+        <a href="https://hust.edu.vn" target="_blank">hust.edu.vn</a>
+        <a href="https://mta.edu.vn" target="_blank">mta.edu.vn</a>
+      </div>
+    </div>
+    <div class="credit">© 2026 Hướng Nghiệp CNTT. Bài tập nghiên cứu — Không phải trang chính thức.</div>
+  </div>
+</footer>
+
+<script>
+  // ============ PAGE NAVIGATION ============
+  function goPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === id);
+    });
+    document.getElementById('navLinks').classList.remove('open');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Re-trigger reveals on the newly active page
+    requestAnimationFrame(observeReveals);
+  }
+
+  // ============ SCROLL PROGRESS BAR ============
+  const progressBar = document.getElementById('scrollProgress');
+  function updateProgress() {
+    const h = document.documentElement;
+    const scrolled = h.scrollTop;
+    const max = h.scrollHeight - h.clientHeight;
+    const pct = max > 0 ? (scrolled / max) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  // ============ REVEAL ON SCROLL ============
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.classList.add('visible');
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  function observeReveals() {
+    document.querySelectorAll('.page.active .reveal:not(.visible)').forEach(el => io.observe(el));
+  }
+  observeReveals();
+</script>
+
+</body>
+</html>
